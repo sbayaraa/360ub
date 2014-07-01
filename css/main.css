@@ -443,10 +443,18 @@ li.login{
     background-position: 0px 0px;
 }
 
+.btn_s_traffic.active{
+    background-position: 0px -26px;
+}
+
 .btn_s_cctv{
     width: 100px;
     height: 24px;
     background-position: -112px 0px;
+}
+
+.btn_s_cctv.active{
+    background-position: -112px -26px;
 }
 
 .btn_s_congestion{
@@ -455,10 +463,18 @@ li.login{
     background-position: -224px 0px;
 }
 
+.btn_s_congestion.active{
+    background-position: -224px -26px;
+}
+
 .btn_s_weather{
     width: 100px;
     height: 24px;
     background-position: -336px 0px;
+}
+
+.btn_s_weather.active{
+    background-position: -336px -26px;
 }
 
 .btn_s_maintenance{
@@ -467,10 +483,18 @@ li.login{
     background-position: -448px 0px;
 }
 
+.btn_s_maintenance.active{
+    background-position: -448px -26px;
+}
+
 .btn_s_route{
     width: 100px;
     height: 24px;
     background-position: -560px 0px;
+}
+
+.btn_s_route.active{
+    background-position: -560px -26px;
 }
 
 .btn_s_land{
@@ -479,10 +503,18 @@ li.login{
     background-position: -672px 0px;
 }
 
+.btn_s_land.active{
+    background-position: -672px -26px;
+}
+
 .btn_s_360{
     width: 100px;
     height: 24px;
     background-position: -784px 0px;
+}
+
+.btn_s_360.active{
+    background-position: -784px -26px;
 }
 
 li.menu{

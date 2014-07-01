@@ -134,97 +134,113 @@
 
             var trafficLayer = null;
 
-            function traffic(){
+            function traffic(el){
                 if(trafficLayer == null) {
                     trafficLayer = new google.maps.KmlLayer({url: 'http://360ub.mn/map/traffic.kml'});
                     trafficLayer.setMap(map);
+                    $(el).addClass('active');
                 }else{
                     trafficLayer.setMap(null);
                     trafficLayer = null;
+                    $(el).removeClass('active');
                 }
             }
 
             var cctvLayer = null;
 
-            function cctv(){
+            function cctv(el){
                 if(cctvLayer == null) {
                     cctvLayer = new google.maps.KmlLayer({url: 'http://360ub.mn/map/cctv.kml'});
                     cctvLayer.setMap(map);
+                    $(el).addClass('active');
                 }else{
                     cctvLayer.setMap(null);
                     cctvLayer = null;
+                    $(el).removeClass('active');
                 }
             }
 
             var weatherLayer = null;
 
-            function weather(){
+            function weather(el){
                 if(weatherLayer == null) {
                     weatherLayer = new google.maps.KmlLayer({url: 'http://360ub.mn/map/weather.kml'});
                     weatherLayer.setMap(map);
+                    $(el).addClass('active');
                 }else{
                     weatherLayer.setMap(null);
                     weatherLayer = null;
+                    $(el).removeClass('active');
                 }
             }
 
             var maintenanceLayer = null;
 
-            function maintenance(){
+            function maintenance(el){
                 if(maintenanceLayer == null) {
                     maintenanceLayer = new google.maps.KmlLayer({url: 'http://360ub.mn/map/maintenance.kml'});
                     maintenanceLayer.setMap(map);
+                    $(el).addClass('active');
                 }else{
                     maintenanceLayer.setMap(null);
                     maintenanceLayer = null;
+                    $(el).removeClass('active');
                 }
             }
 
             var congestionLayer = null;
 
-            function congestion(){
+            function congestion(el){
                 if(congestionLayer == null) {
                     congestionLayer = new google.maps.KmlLayer({url: 'http://360ub.mn/map/congestion.kml'});
                     congestionLayer.setMap(map);
+                    $(el).addClass('active');
                 }else{
                     congestionLayer.setMap(null);
                     congestionLayer = null;
+                    $(el).removeClass('active');
                 }
             }
 
             var routeLayer = null;
 
-            function route(){
+            function route(el){
                 if(routeLayer == null) {
                     routeLayer = new google.maps.KmlLayer({url: 'http://360ub.mn/map/route.kml'});
                     routeLayer.setMap(map);
+                    $(el).addClass('active');
                 }else{
                     routeLayer.setMap(null);
                     routeLayer = null;
+                    $(el).removeClass('active');
                 }
             }
 
             var landLayer = null;
 
-            function land(){
+            function land(el){
                 if(landLayer == null) {
                     landLayer = new google.maps.KmlLayer({url: 'http://360ub.mn/map/land.kml'});
                     landLayer.setMap(map);
+                    $(el).addClass('active');
                 }else{
                     landLayer.setMap(null);
                     landLayer = null;
+                    $(el).removeClass('active');
                 }
             }
 
             var Layer360 = null;
 
-            function call360(){
+            function call360(el){
                 if(Layer360 == null) {
                     Layer360 = new google.maps.KmlLayer({url: 'http://360ub.mn/map/360.kml'});
                     Layer360.setMap(map);
+                    $(el).addClass('active');
                 }else{
                     Layer360.setMap(null);
                     Layer360 = null;
+                    $(el).removeClass('active');
                 }
             }
 
@@ -342,28 +358,28 @@
                     <div class="map_menu_item">
                         <ul>
                             <li>
-                                <a href="#" class="tool_item btn_s_traffic" onclick="traffic();" data-topic="traffic">Замын урсгал</a>
+                                <a href="#" class="tool_item btn_s_traffic" onclick="traffic(this);" data-topic="traffic">Замын урсгал</a>
                             </li>
                             <li>
-                                <a href="#" class="tool_item btn_s_cctv" onclick="cctv();" data-topic="cctv">CCTV</a>
+                                <a href="#" class="tool_item btn_s_cctv" onclick="cctv(this);" data-topic="cctv">CCTV</a>
                             </li>
                             <li>
-                                <a href="#" class="tool_item btn_s_congestion" onclick="congestion();" data-topic="congestion">Замын түгжрэл</a>
+                                <a href="#" class="tool_item btn_s_congestion" onclick="congestion(this);" data-topic="congestion">Замын түгжрэл</a>
                             </li>
                             <li>
-                                <a href="#" class="tool_item btn_s_weather" onclick="weather();" data-topic="weather">Цаг агаар</a>
+                                <a href="#" class="tool_item btn_s_weather" onclick="weather(this);" data-topic="weather">Цаг агаар</a>
                             </li>
                             <li>
-                                <a href="#" class="tool_item btn_s_maintenance" onclick="maintenance();" data-topic="maintenance">Зам засвар</a>
+                                <a href="#" class="tool_item btn_s_maintenance" onclick="maintenance(this);" data-topic="maintenance">Зам засвар</a>
                             </li>
                             <li>
-                                <a href="#" class="tool_item btn_s_route" onclick="route();" data-topic="route">Засмал зам</a>
+                                <a href="#" class="tool_item btn_s_route" onclick="route(this);" data-topic="route">Засмал зам</a>
                             </li>
                             <li>
-                                <a href="#" class="tool_item btn_s_land" onclick="land();" data-topic="land">Газар нутаг</a>
+                                <a href="#" class="tool_item btn_s_land" onclick="land(this);" data-topic="land">Газар нутаг</a>
                             </li>
                             <li>
-                                <a href="#" class="tool_item btn_s_360" onclick="call360();" data-topic="360">360</a>
+                                <a href="#" class="tool_item btn_s_360" onclick="call360(this);" data-topic="360">360</a>
                             </li>
                         </ul>
                     </div>
